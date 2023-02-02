@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Form</title>
+    <style>
+      #mylink {
+        font-size: 25px;
+      }
+      fieldset {
+        width: 30%;
+        margin: auto;
+        padding: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <header align="center">
+      <h1>Register</h1>
+    </header>
+
+    <form action="/register" method="POST">
+      <fieldset>
+        <label>Name</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your name"
+          required
+        />
+        <br /><br />
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+
+        <label>Password</label>
+        <input type="password" name="password" required />
+        <br /><br />
+
+        <button type="submit">Register</button>
+        <p>
+          Already Register
+          <a href="./login.html">LOGIN</a>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
